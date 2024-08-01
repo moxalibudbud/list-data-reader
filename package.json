@@ -1,5 +1,5 @@
 {
-  "name": "universal-file-reader",
+  "name": "anydata-to-json",
   "version": "0.0.0",
   "scripts": {
     "start": "node dist",
