@@ -1,8 +1,9 @@
+import {describe, expect, it} from '@jest/globals';
 const path = require('path');
-import { File } from '../utils/file';
+import { File } from '@utils/file';
 
-describe('file.js', () => {
-  const mockFile = path.resolve(__dirname, '../../../mockdata/text-file.txt');
+describe('Test utils/file.js', () => {
+  const mockFile = path.resolve(__dirname, './mockdata/text-file.txt');
   const fileInstance = new File(mockFile);
   
   describe('get directory()', () => {

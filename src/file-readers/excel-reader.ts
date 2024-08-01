@@ -1,11 +1,11 @@
 import {
   File,
   FileReader,
-} from '../file';
+} from '@utils/file';
 
 import fs from 'fs';
 import * as xlsx from 'xlsx';
-import { spreadSheettoJSON } from '../util';
+import { spreadSheetToJson } from '@utils/helpers';
 
 interface WorkBook {
   SheetNames: string[];
@@ -61,7 +61,7 @@ export class ExcelReader extends File implements FileReader {
       const sheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[sheetName];
       const rows = xlsx.utils.sheet_to_json(worksheet, { header: 1 });
-      const jsonArray = spreadSheettoJSON(rows);
+      const jsonArray = spreadSheetToJson(rows);
       return jsonArray;
     } catch (error) {
       throw error;

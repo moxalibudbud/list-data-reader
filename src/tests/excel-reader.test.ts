@@ -5,7 +5,7 @@ function describe() {
   
   async function testRead() {
     try {
-      const filepath = path.resolve(__dirname, '../../../../mockdata/excel-file.xls');
+      const filepath = path.resolve(__dirname, './mockdata/excel-file.xls');
       // const filepath = path.resolve(__dirname, '../../../mockdata/excel-file.xls');
       const reader = new ExcelReader(filepath);
       const result = await reader.readContent();

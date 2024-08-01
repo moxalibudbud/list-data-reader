@@ -3,15 +3,24 @@
   "version": "0.0.0",
   "scripts": {
     "watch": "nodemon --config nodemon.json",
-    "build": "tsc --build tsconfig.prod.json"
+    "build": "tsc --build tsconfig.prod.json",
+    "test": "jest"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "@jest/globals": "^29.7.0",
     "@types/node": "^22.0.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
   }

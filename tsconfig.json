@@ -22,13 +22,23 @@
       "@utils/*": [
         "src/utils/*"
       ],
+      "@utils": [
+        "src/utils"
+      ],
       "@file-readers/*": [
         "src/file-readers/*"
+      ],
+      "@file-readers": [
+        "src/file-readers"
       ],
     }
   },
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": []
+  "exclude": [],
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+  }
 }

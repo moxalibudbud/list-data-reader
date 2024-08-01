@@ -2,7 +2,7 @@ import {
   File,
   FileReader,
 } from '../utils/file';
-import { fileReaderProvider } from '../file-reader-provider';
+import { fileReaderProvider } from '@utils/file-reader-provider';
 
 export class DynamicFileReader extends File {
 

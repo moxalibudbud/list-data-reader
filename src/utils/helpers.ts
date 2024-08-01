@@ -1,4 +1,4 @@
-export const spreadSheettoJSON = (rows: any[]) => {
+export const spreadSheetToJson = (rows: any[]) => {
   const jsonArray = [];
   const keys = rows[0];
   const rowLength = rows.length;

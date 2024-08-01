@@ -2,7 +2,7 @@ import {
   File,
   FileReader,
 } from '../utils/file';
-import { spreadSheettoJSON } from '../utils/util';
+import { spreadSheetToJson } from '@utils/helpers';
 
 export class CSVReader extends File implements FileReader {
 
@@ -13,7 +13,7 @@ export class CSVReader extends File implements FileReader {
   async readContent() {
     try {
       const data = await this.readFile();
-      const jsonArray = spreadSheettoJSON(data.rows);
+      const jsonArray = spreadSheetToJson(data.rows);
       return jsonArray;
     } catch (error) {
       throw error;
