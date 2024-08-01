@@ -17,7 +17,15 @@
     ],
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@file-readers/*": [
+        "src/file-readers/*"
+      ],
+    }
   },
   "include": [
     "src/**/*.ts"
