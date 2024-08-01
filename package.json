@@ -2,17 +2,15 @@
   "name": "anydata-to-json",
   "version": "0.0.0",
   "scripts": {
-    "start": "node dist",
-    "start:dev": "ts-node src/index.ts",
     "watch": "nodemon --config nodemon.json",
-    "build": "tsc --build tsconfig.prod.json",
-    "test": "jest"
+    "build": "tsc --build tsconfig.prod.json"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^22.0.2",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
