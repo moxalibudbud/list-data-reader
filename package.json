@@ -2,8 +2,8 @@
   "name": "list-data-reader",
   "version": "0.0.1",
   "description": "Reads list data from common files such as .csv, .xlsx, .txt, .DAT and convert into JSON array",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "nodemon --config nodemon.json",
     "build": "tsc --build tsconfig.prod.json",
