@@ -1,7 +1,7 @@
 {
   "name": "list-data-reader",
   "version": "0.0.1",
-  "description": "Reads list data from common files such as .csv, .xlsx, .txt, .DAT and convert into JSON array",
+  "description": "Reads a list of data from common files such as .csv, .xlsx, .txt, .DAT and convert into JSON array.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
