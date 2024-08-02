@@ -4,6 +4,8 @@
     "sourceMap": false
   },
   "exclude": [
-    "tests/*.ts"
+    "node_modules",
+    "dist",
+    "tests"
   ]
 }
