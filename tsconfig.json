@@ -8,6 +8,7 @@
     "module": "commonjs",
     "outDir": "dist",
     "removeComments": true,
+    "declaration": true,
     "sourceMap": true,
     "strict": true,
     "target": "es6",
@@ -17,28 +18,10 @@
     ],
     "typeRoots": [
       "node_modules/@types"
-    ],
-    "paths": {
-      "@src/*": [
-        "src/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@utils": [
-        "src/utils"
-      ],
-      "@file-readers/*": [
-        "src/file-readers/*"
-      ],
-      "@file-readers": [
-        "src/file-readers"
-      ],
-    }
+    ]
   },
   "include": [
-    "src/**/*.ts",
-    "tests/*.ts"
+    "src/**/*.ts"
   ],
   "exclude": [],
   "ts-node": {

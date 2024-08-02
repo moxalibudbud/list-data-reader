@@ -1,11 +1,11 @@
 import {
   File,
   FileReader,
-} from '@utils/file';
+} from '../utils/file';
 
 import fs from 'fs';
 import * as xlsx from 'xlsx';
-import { spreadSheetToJson } from '@utils/helpers';
+import { spreadSheetToJson } from '../utils/helpers';
 
 interface WorkBook {
   SheetNames: string[];

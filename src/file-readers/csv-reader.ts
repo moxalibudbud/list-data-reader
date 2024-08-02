@@ -2,7 +2,7 @@ import {
   File,
   FileReader,
 } from '../utils/file';
-import { spreadSheetToJson } from '@utils/helpers';
+import { spreadSheetToJson } from '../utils/helpers';
 
 export class CSVReader extends File implements FileReader {
 

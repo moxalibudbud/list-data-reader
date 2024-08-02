@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DynamicFileReader = void 0;
 const tslib_1 = require("tslib");
 const file_1 = require("../utils/file");
-const file_reader_factory_1 = require("@src/utils/file-reader-factory");
+const file_reader_factory_1 = require("../utils/file-reader-factory");
 class DynamicFileReader extends file_1.File {
     constructor(filepath) {
         super(filepath);
