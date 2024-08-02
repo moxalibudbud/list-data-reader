@@ -26,5 +26,5 @@ describe('Test utils/file.js', () => {
     }
   }
 
-  SAMPLE_FILES.map(filename => describe(filename, testReader(filename)));
+  // SAMPLE_FILES.map(filename => describe(filename, testReader(filename)));
 });

@@ -19,6 +19,9 @@
       "node_modules/@types"
     ],
     "paths": {
+      "@src/*": [
+        "src/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ],
@@ -34,7 +37,8 @@
     }
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "tests/*.ts"
   ],
   "exclude": [],
   "ts-node": {

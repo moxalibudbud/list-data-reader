@@ -2,7 +2,7 @@ import {
   File,
   FileReader,
 } from '../utils/file';
-import { fileReaderProvider } from '@utils/file-reader-provider';
+import { fileReaderFactory } from '@src/utils/file-reader-factory';
 
 export class DynamicFileReader extends File {
 
@@ -11,7 +11,7 @@ export class DynamicFileReader extends File {
   }
   
   get fileReader() {
-    const fileReader = fileReaderProvider[this.extension];
+    const fileReader = fileReaderFactory[this.extension];
 
     if(fileReader) return new fileReader(this.filepath);
 
